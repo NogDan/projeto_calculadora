@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "title";
+    src: url("fontes/Always\ Lovely.ttf") format("truetype");
+}
+.container{
+    position: relative;
+  
+    
+   width: 100vw;
+   height: 100vh;
+    background-color: rgb(207, 207, 82);
+}
+.calculadora{
+    box-shadow: 2px 1px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    cursor: pointer;
+    background-color: rgb(8, 81, 110);
+    width: 350px;
+    height: 590px;
+
+}
+.title{
+    color: black;
+    text-shadow: 1px 2px 4px whitesmoke;
+    letter-spacing: 12px;
+    font-family: "title";
+    font-weight: normal;
+    font-size: 3.5rem;
+    margin-bottom: 6%;
+    
+}
+
+.display_calc{
+    overflow: hidden;
+    align-items: center;
+    font-family: "title";
+    color: navy;
+    border-radius: 5px;
+    border-style: none;
+   display: flex;
+   margin-bottom: 12%;
+  margin-top: -10%;
+    width: 90%;
+    height: 55px;
+  outline: none;
+ 
+  padding: 10px 0px 0px 10px;
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+.buttons{
+    
+    margin-top: -10%;
+  
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+  
+    
+    
+    
+   
+   
+}
+.btn{
+    margin: 4.2px;
+    color: navy;
+    align-items: center;
+   justify-content: center;
+   cursor: pointer;
+    border-radius: 50px;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+    font-family: "title";
+    font-size: 2.5rem;
+    font-weight: lighter;
+    
+}
+.btn:hover{
+    background-color: rgb(173, 194, 233);
+}
+.ponto{
+    display: flex;
+    justify-content:center;
+    padding-bottom: 18px;
+    font-size: 3rem;
+}
+.c{
+   background-color: rgb(224, 19, 19);
+   color: whitesmoke;
+
+}
+.c:hover{
+    background-color:rgba(219, 18, 18, 0.822) ;
+}
+.menos{
+    padding-bottom: 18px;
+}
+.btn_div{
+    padding-top: 10px;
+}
+.btn_red{
+    color:rgb(224, 19, 19) ;
+}
+.btn_blue{
+    background-color: rgb(79, 133, 235);
+    color:white;
+}
+.btn_blue:hover{
+    background-color: rgb(173, 194, 233);
+    color:rgb(224, 19, 19) ;
+}
+.sinal_igual{
+    color:rgb(224, 19, 19) ;
+    font-size: 3.4rem;
+    padding-bottom: 30px;
+
+}
+@keyframes pulsar_btn{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.09);
+    }
+    0%{
+        transform: scale(1.09);
+    }
+}
+button:hover{
+    animation-name:pulsar_btn ;
+    animation-duration:5s;
+    animation-timing-function:ease-in-out ;
+    animation-iteration-count: 2s;
+    animation-direction: alternate;
+    
+}
+.footer{
+    font-family: "title";
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}

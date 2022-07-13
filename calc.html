@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div class="calculadora">
+          
+                <h1 class="title"> Calculator</h1>
+            <input type="text" name="visor" class="display_calc">
+            <div class="buttons">
+                <button class="btn c" onclick="clean()"> C </button>
+                <button class="btn btn_red" onclick="porcento()"> % </button>
+                <button class="btn btn_red" onclick="add_val('(')"> ( </button>
+                <button class="btn btn_red" onclick="add_val(')')"> ) </button>
+                <button class="btn" onclick="add_val(9)"> 9 </button>
+                <button class="btn" onclick="add_val(8)"> 8 </button>
+                <button class="btn" onclick="add_val(7)"> 7 </button>
+                <button class="btn btn_blue btn_div" onclick="add_val('/')"> / </button>
+                <button class="btn" onclick="add_val(6)"> 6 </button>
+                <button class="btn" onclick="add_val(5)"> 5 </button>
+                <button class="btn" onclick="add_val(4)"> 4 </button>
+                <button class="btn btn_blue" onclick="add_val('*')"> x </button>
+                <button class="btn" onclick="add_val(3)"> 3 </button>
+                <button class="btn" onclick="add_val(2)"> 2 </button>
+                <button class="btn" onclick="add_val(1)"> 1 </button>
+                <button class="btn menos btn_blue" onclick="add_val('-')"> _ </button>
+                <button class="btn" onclick="add_val(0)"> 0 </button>
+                <button class="btn ponto" onclick="add_val('.')"> . </button>
+                <button class="btn sinal_igual" onclick="calcular()"> = </button>
+                <button class="btn btn_blue" onclick="add_val('+')"> + </button>
+            </div>
+            <footer class="footer">Danilo Nogueira</footer>
+        </div>
+    </section>
+    <script src="calc.js"></script>
+</body>
+</html>
